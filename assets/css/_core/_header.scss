@@ -1,3 +1,22 @@
+body {
+  header {
+    .header-title {
+      svg {
+        fill: $global-font-color;
+      }
+    }
+  }
+  &[theme=dark] {
+    header {
+      .header-title {
+        svg {
+          fill: $global-font-color-dark;
+        }
+      }
+    }
+  }
+}
+
 header {
   width: 100%;
   z-index: 150;

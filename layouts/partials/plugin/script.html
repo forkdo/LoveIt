@@ -8,17 +8,21 @@
         {{- $integrity := .Integrity -}}
         {{- if (urls.Parse $src).Host | not -}}
             {{- $resource := resources.Get $src -}}
-            {{- with .Template -}}
-                {{- $resource = $resource | resources.ExecuteAsTemplate . $.Context -}}
-            {{- end -}}
-            {{- if .Minify -}}
-                {{- $resource = $resource | minify -}}
-            {{- end -}}
-            {{- with .Fingerprint -}}
-                {{- $resource = $resource | fingerprint . -}}
-                {{- $integrity = $resource.Data.Integrity -}}
-            {{- end -}}
-            {{- $src = $resource.RelPermalink -}}
+            {{- if $resource -}}
+                {{- with .Template -}}
+                    {{- $resource = $resource | resources.ExecuteAsTemplate . $.Context -}}
+                {{- end -}}
+                {{- if .Minify -}}
+                    {{- $resource = $resource | minify -}}
+                {{- end -}}
+                {{- with .Fingerprint -}}
+                    {{- $resource = $resource | fingerprint . -}}
+                    {{- $integrity = $resource.Data.Integrity -}}
+                {{- end -}}
+                {{- $src = $resource.RelPermalink -}} 
+            {{- else -}}
+                {{- $src = "" -}}
+            {{- end -}}    
         {{- end -}}
         {{- $attrs := printf `src="%v"` $src -}}
         {{- if .Crossorigin -}}

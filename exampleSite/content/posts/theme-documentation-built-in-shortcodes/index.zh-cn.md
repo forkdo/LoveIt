@@ -137,19 +137,19 @@ For more information please have a look at GitHub issue [#7879](https://github.c
 
 [`ref` 和 `relref` 的文档](https://gohugo.io/content-management/shortcodes#ref-and-relref)
 
-## 7 tweet
+## 7 twitter
 
-[`tweet` 的文档](https://gohugo.io/content-management/shortcodes#tweet)
+[`twitter` 的文档](https://gohugo.io/content-management/shortcodes#twitter)
 
-一个 `tweet` 示例:
+一个 `twitter` 示例:
 
 ```markdown
-{{</* tweet 917359331535966209 */>}}
+{{</* twitter user="SanDiegoZoo" id="1453110110599868418" */>}}
 ```
 
 呈现的输出效果如下:
 
-{{< tweet 917359331535966209 >}}
+{{< twitter user="SanDiegoZoo" id="1453110110599868418" >}}
 
 ## 8 vimeo
 

@@ -34,6 +34,7 @@ math:
 * :(fab fa-google fa-fw): **[Google Analytics](https://analytics.google.com/analytics)** supported
 * :(far fa-chart-bar fa-fw): **[Fathom Analytics](https://usefathom.com/)** supported
 * :(fas fa-chart-column fa-fw): **[Plausible Analytics](https://plausible.io/)** supported
+* :(fas fa-chart-pie fa-fw): **[Umami Analytics](https://umami.is/)** supported
 * :(fab fa-yandex-international fa-fw): **[Yandex Metrica](https://metrica.yandex.com/)** supported
 * :(fas fa-sitemap fa-fw): Search engine **verification** supported (Google, Bind, Yandex and Baidu)
 * :(fas fa-tachometer-alt fa-fw): **CDN** for third-party libraries supported
@@ -63,7 +64,9 @@ math:
 * :(fas fa-comment-dots fa-fw): **Commento** comment system supported by [Commento](https://commento.io/)
 * :(fas fa-comment-alt fa-fw): **utterances** comment system supported by [utterances](https://utteranc.es/)
 * :(fas fa-comments fa-fw): **giscus** comment system supported by [giscus](https://giscus.app/)
-
+* :(fas fa-comments fa-fw): **Remark42** comment system supported by [Remark42](https://remark42.com/)
+* :(fas fa-comments fa-fw): **Artalk** comment system supported by [Artalk](https://artalk.js.org/)
+ 
 ### Extended Features
 
 * :(fas fa-search fa-fw): **Search** supported by [Lunr.js](https://lunrjs.com/) or [algolia](https://www.algolia.com/)
