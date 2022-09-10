@@ -66,6 +66,7 @@ I hope you will LoveIt ❤️!
 * **[Google Analytics](https://analytics.google.com/analytics)** supported
 * **[Fathom Analytics](https://usefathom.com/)** supported
 * **[Plausible Analytics](https://plausible.io/)** supported
+* **[Umami Analytics](https://umami.is/)** supported
 * **[Yandex Metrica](https://metrica.yandex.com/)** supported
 * Search engine **verification** supported (Google, Bind, Yandex and Baidu)
 * **CDN** for third-party libraries supported
@@ -95,6 +96,7 @@ I hope you will LoveIt ❤️!
 * **Commento** comment system supported by [Commento](https://commento.io/)
 * **utterances** comment system supported by [utterances](https://utteranc.es/)
 * **giscus** comment system supported by [giscus](https://giscus.app/)
+* **Remark42** comment system supported by [Remark42](https://remark42.com/)
 
 ### Extended Features
 

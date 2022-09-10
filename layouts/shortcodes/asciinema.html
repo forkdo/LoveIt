@@ -1,0 +1,21 @@
+{{- $url := .Get "url" | default "https://asciinema.org" -}}
+{{- $id := cond .IsNamedParams (.Get "id") (.Get 0) -}}
+
+{{- $options := dict -}}
+{{- $options = $options | merge (dict "Url" $url) -}}
+{{- $options = $options | merge (dict "Id" $id) -}}
+
+{{- if $id -}}
+    {{- $options = $options | merge (dict "Auto" (.Get "auto" | default 0)) -}}
+    {{- $options = $options | merge (dict "Start" (.Get "start" | default 0)) -}}
+    {{- $options = $options | merge (dict "Loop" (.Get "loop" | default 0)) -}}
+    {{- $options = $options | merge (dict "Speed" (.Get "speed" | default 1)) -}}
+    {{- $options = $options | merge (dict "Idle" (.Get "idle" | default 0)) -}}
+    {{- $options = $options | merge (dict "Poster" (.Get "poster" | default "")) -}}
+    {{- $options = $options | merge (dict "Theme" (.Get "theme" | default "")) -}}
+    {{- $options = $options | merge (dict "Cols" (.Get "cols" | default 0)) -}}
+    {{- $options = $options | merge (dict "Rows" (.Get "rows" | default 0)) -}}
+    {{- $options = $options | merge (dict "Preload" (.Get "preload" | default 0)) -}}
+    
+    {{- partial "plugin/asciinema.html" $options -}}
+{{- end -}}

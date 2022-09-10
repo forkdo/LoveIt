@@ -81,13 +81,15 @@
     # license info (HTML format is supported)
     # 许可协议信息 (支持 HTML 格式)
     license= ""
+    # Inject invible Mastodon rel="me" link 
+    mastodonRelme = false
 
   # Section (all posts) page config
   # Section (所有文章) 页面配置
   [params.section]
     # special amount of posts in each section page
     # section 页面每页显示文章数量
-    paginate = 20
+    paginate = 10
     # date format (month and day)
     # 日期格式 (月和日)
     dateFormat = "01-02"
@@ -100,7 +102,7 @@
   [params.list]
     # special amount of posts in each list page
     # list 页面每页显示文章数量
-    paginate = 20
+    paginate = 10
     # date format (month and day)
     # 日期格式 (月和日)
     dateFormat = "01-02"
@@ -273,9 +275,12 @@
     Plume = ""
     HackTheBox = ""
     RootMe= ""
-    Email = ""
     Phone = ""
     RSS = ""
+    Email = ""
+    Codeberg = ""
+    Framagit = ""
+    GitCode = ""
 
   # Page global config
   # 文章页面全局配置
@@ -307,6 +312,9 @@
     # whether to show the full text content in RSS
     # 是否在 RSS 中显示全文内容
     rssFullText = false
+    # whether to show page views count
+    # 是否开启阅读量计数
+    viewsCount = true
     # Table of the contents config
     # 目录配置
     [params.page.toc]
@@ -429,7 +437,6 @@
         # automatically adapt the current theme i18n configuration when empty
         # 为空时自动适配当前主题 i18n 配置
         lang = ""
-        visitor = true
         recordIP = true
         highlight = true
         enableQQ = false
@@ -500,6 +507,19 @@
         lazyLoading = false
         lightTheme = "light"
         darkTheme = "dark"
+      # Remark42 comment config
+      # Remark42 评论系统设置 (https://github.com/umputun/remark42)
+      [params.page.comment.remark42]
+        enable = false
+        host="https://demo.remark42.com"
+        siteId="remark"
+      # artalk comment config
+      # artalk 评论系统设置 (https://github.com/ArtalkJS/Artalk)
+      [params.page.comment.artalk]
+        enable = false
+        elementId = "#artalk"
+        server = "https://artalk.js.org"
+        site = "artalk"        
     # Third-party library config
     # 第三方库配置
     [params.page.library]
@@ -579,12 +599,21 @@
     # Plausible Analytics
     [params.analytics.plausible]
       dataDomain = ""
+    # Umami Analytics
+    [params.analytics.umami]
+      src = ""
+      dataWebsiteId = ""
     # Yandex Metrica
     [params.analytics.yandexMetrica]
       id = ""
 
   # Cookie consent config
   # Cookie 许可配置
+  # Ads config
+  [params.ads]
+    enable = false
+    [params.ads.google]
+      id = ""
   [params.cookieconsent]
     enable = false
     # text strings used for Cookie consent banner

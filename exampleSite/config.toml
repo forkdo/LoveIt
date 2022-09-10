@@ -24,9 +24,6 @@ languageName = "English"
 # 是否包括中日韩文字
 hasCJKLanguage = false
 
-# default amount of posts in each pages
-# 默认每页列表显示的文章数目
-paginate = 12
 # google analytics code [UA-XXXXXXXX-X]
 # 谷歌分析代号 [UA-XXXXXXXX-X]
 googleAnalytics = ""
@@ -54,6 +51,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   name = "xxxx"
   email = ""
   link = ""
+
+# Pagination config
+# 分页配置
+# https://gohugo.io/templates/pagination/#configuration
+[pagination]
+# default amount of posts in each pages
+# 默认每页列表显示的文章数目
+  pagerSize = 10
 
 # Menu config
 # 菜单配置
@@ -167,6 +172,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # license info (HTML format is supported)
     # 许可协议信息 (支持 HTML 格式)
     license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    # Inject invible Mastodon rel="me" link 
+   mastodonRelme = false
 
   # Section (all posts) page config
   # Section (所有文章) 页面配置
@@ -359,8 +366,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Plume = ""
     HackTheBox = ""
     RootMe= ""
+    Codeberg = ""
     Email = ""
     RSS = ""
+    Framagit = "jetsung"
+    GitCode = "jetsung"
 
   # Page global config
   # 文章页面全局配置
@@ -392,6 +402,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # whether to show the full text content in RSS
     # 是否在 RSS 中显示全文内容
     rssFullText = false
+    # whether to show page views count
+    # 是否开启阅读量计数
+    viewsCount = true
     # Table of the contents config
     # 目录配置
     [params.page.toc]
@@ -585,6 +598,20 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         lazyLoading = false
         lightTheme = "light"
         darkTheme = "dark"
+      # Remark42 comment config
+      # Remark42 评论系统设置 (https://github.com/umputun/remark42)
+      [params.page.comment.remark42]
+        enable = false
+        host="https://demo.remark42.com"
+        siteId="remark"
+      # artalk comment config
+      # artalk 评论系统设置 (https://github.com/ArtalkJS/Artalk)
+      [params.page.comment.artalk]
+        enable = false
+        elementId = "#artalk"
+        server = "https://artalk.js.org"
+        site = "artalk"        
+    # Third-party library config        
     # Third-party library config
     # 第三方库配置
     [params.page.library]
@@ -664,6 +691,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # Plausible Analytics
     [params.analytics.plausible]
       dataDomain = ""
+    # Umami Analytics
+    [params.analytics.umami]
+      src = ""
+      dataWebsiteId = ""
     # Yandex Metrica
     [params.analytics.yandexMetrica]
       id = ""
@@ -783,7 +814,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
 
 # Multilingual
 # 多语言

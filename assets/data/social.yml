@@ -569,6 +569,30 @@ rootme:
   Icon:
     Src: svg/icons/rootme.svg
 
+# 073: Codeberg
+codeberg:
+  Weight: 73
+  Title: Codeberg
+  Prefix: https://codeberg.org/
+  Icon:
+    Simpleicons: codeberg
+
+# 074: Framagit
+framagit:
+  Weight: 74
+  Title: Framagit
+  Prefix: https://framagit.org/
+  Icon:
+    Simpleicons: framagit
+
+# 075: GitCode
+gitcode:
+  Weight: 75
+  Title: GitCode
+  Prefix: https://gitcode.com/
+  Icon:
+    Simpleicons: gitcode
+
 # Phone
 phone:
   Weight: 98

@@ -7,6 +7,9 @@
                     {{- with .logo -}}
                         {{- dict "Src" . "Class" "logo" | partial "plugin/img.html" -}}
                     {{- end -}}
+                    {{- with .logoSvg -}}
+                        {{ . | safeHTML }}
+                    {{- end -}}                    
                     {{- with .pre -}}
                         <span class="header-title-pre">{{ . | safeHTML }}</span>
                     {{- end -}}
@@ -57,9 +60,9 @@
                 <a href="javascript:void(0);" class="menu-item theme-switch" title="{{ T "switchTheme" }}">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
                 </a>
-                {{- if .Site.IsMultiLingual -}}
+                {{- if hugo.IsMultilingual -}}
                 <a href="javascript:void(0);" class="menu-item language" title="{{ T "selectLanguage" }}">
-                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>                      
                     <select class="language-select" id="language-select-desktop" onchange="location = this.value;">
                         {{- if eq .Kind "404" -}}
                             {{- /* https://github.com/dillonzq/LoveIt/issues/378 */ -}}
@@ -94,6 +97,9 @@
                         {{- with .logo -}}
                             {{- dict "Src" . "Class" "logo" | partial "plugin/img.html" -}}
                         {{- end -}}
+                        {{- with .logoSvg -}}
+                            {{ . | safeHTML }}
+                        {{- end -}}                        
                         {{- with .pre -}}
                             <span class="header-title-pre">{{ . | safeHTML }}</span>
                         {{- end -}}
@@ -149,7 +155,7 @@
             <a href="javascript:void(0);" class="menu-item theme-switch" title="{{ T "switchTheme" }}">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a>
-            {{- if .Site.IsMultiLingual -}}
+            {{- if hugo.IsMultilingual -}}
             
                 <a href="javascript:void(0);" class="menu-item" title="{{ T "selectLanguage" }}">
                     <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
