@@ -369,6 +369,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Codeberg = ""
     Email = ""
     RSS = ""
+    Framagit = "jetsung"
+    GitCode = "jetsung"
 
   # Page global config
   # 文章页面全局配置

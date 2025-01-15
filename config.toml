@@ -275,10 +275,12 @@
     Plume = ""
     HackTheBox = ""
     RootMe= ""
-    Codeberg = ""
-    Email = ""
     Phone = ""
     RSS = ""
+    Email = ""
+    Codeberg = ""
+    Framagit = ""
+    GitCode = ""
 
   # Page global config
   # 文章页面全局配置
