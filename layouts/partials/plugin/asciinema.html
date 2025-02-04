@@ -1,0 +1,19 @@
+{{- $url := .Url | default "https://recode.idev.top" -}}
+{{- $id := .Id | default 1 -}}
+
+<div class="asciinema">
+    <script src="{{ $url }}/a/{{ $id }}.js" 
+        id="asciicast-{{ $id }}" 
+        {{ with .Auto }} data-autoplay="{{ . }}" {{ end }}
+        {{ with .Start }} data-start-at="{{ . }}" {{ end }}
+        {{ with .Loop }} data-loop="{{ . }}" {{ end }}
+        {{ with .Speed }} data-speed="{{ . }}" {{ end }}
+        {{ with .Idle }} data-idle-time-limit="{{ . }}" {{ end }}
+        {{ with .Poster }} data-poster="{{ . }}" {{ end }}
+        {{ with .Theme }} data-theme="{{ . }}" {{ end }}
+        {{ with .Cols }} data-cols="{{ . }}" {{ end }}
+        {{ with .Rows }} data-rows="{{ . }}" {{ end }}
+        {{ with .Preload }} data-preload="{{ . }}" {{ end }}
+        async>
+    </script>
+</div>
