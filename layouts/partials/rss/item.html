@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 {{- $params := .Page.Params | merge .Site.Params.Page | merge (dict "author" .Site.Params.Author.name) -}}
-||||||| e9e89a46
-{{- $params := .Page.Params | merge .Site.Params.Page | merge (dict "author" .Site.Author.name) -}}
-=======
-{{- $params := .Page.Params | merge .Site.Params.Page | merge (dict "author" .Site.Params.author.name) -}}
->>>>>>> t1
 <item>
     <title>
         {{- .Page.Title -}}
@@ -25,7 +19,7 @@
         {{- "<![CDATA[" | safeHTML -}}
         {{- with $params.featuredimage -}}
             <div class="featured-image">
-                <img src="{{ . | relURL }}" referrerpolicy="no-referrer">
+                <img src="{{ . | relURL }}" title="{{ $params.title }}" referrerpolicy="no-referrer">
             </div>
         {{- end -}}
         {{- $content := .Page.Description -}}

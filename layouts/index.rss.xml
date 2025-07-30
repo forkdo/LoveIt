@@ -15,30 +15,12 @@
                 {{- . -}}
             </language>
         {{- end -}}
-<<<<<<< HEAD
         {{- with .Site.Params.Author.email -}}
-||||||| e9e89a46
-        {{- with .Site.Author.email -}}
-=======
-        {{- with .Site.Params.author.email -}}
->>>>>>> t1
             <managingEditor>
-<<<<<<< HEAD
                 {{- . }}{{ with $.Site.Params.Author.name }} ({{ . }}){{ end -}}
-||||||| e9e89a46
-                {{- . }}{{ with $.Site.Author.name }} ({{ . }}){{ end -}}
-=======
-                {{- . }}{{ with $.Site.Params.author.name }} ({{ . }}){{ end -}}
->>>>>>> t1
             </managingEditor>
             <webMaster>
-<<<<<<< HEAD
                 {{- . }}{{ with $.Site.Params.Author.name }} ({{ . }}){{ end -}}
-||||||| e9e89a46
-                {{- . }}{{ with $.Site.Author.name }} ({{ . }}){{ end -}}
-=======
-                {{- . }}{{ with $.Site.Params.author.name }} ({{ . }}){{ end -}}
->>>>>>> t1
             </webMaster>
         {{- end -}}
         {{- with .Site.Copyright -}}

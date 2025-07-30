@@ -24,19 +24,9 @@ languageName = "English"
 # 是否包括中日韩文字
 hasCJKLanguage = false
 
-<<<<<<< HEAD:exampleSite/hugo.toml
-||||||| e9e89a46:exampleSite/config.toml
-# default amount of posts in each pages
-# 默认每页列表显示的文章数目
-paginate = 12
 # google analytics code [UA-XXXXXXXX-X]
 # 谷歌分析代号 [UA-XXXXXXXX-X]
 googleAnalytics = ""
-=======
-# google analytics code [UA-XXXXXXXX-X]
-# 谷歌分析代号 [UA-XXXXXXXX-X]
-googleAnalytics = ""
->>>>>>> t1:exampleSite/config.toml
 # copyright description used only for seo schema
 # 版权描述，仅仅用于 SEO
 copyright = ""
@@ -57,18 +47,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Pagination config
 # 分页配置
-[pagination]
-  disableAliases = false
-  pagerSize = 10
-  path = "page"
-
-# Pagination config
-# 分页配置
 # https://gohugo.io/templates/pagination/#configuration
 [pagination]
+  disableAliases = false
 # default amount of posts in each pages
 # 默认每页列表显示的文章数目
   pagerSize = 10
+  path = "page"
 
 # Menu config
 # 菜单配置
@@ -383,21 +368,16 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Plume = ""
     HackTheBox = ""
     RootMe= ""
-<<<<<<< HEAD:exampleSite/hugo.toml
     Malt = ""
     TikTok = ""
     TryHackMe = ""
     Codeberg = ""
     HuggingFace = ""
     Threads = ""
-||||||| e9e89a46:exampleSite/config.toml
-=======
-    Codeberg = ""
->>>>>>> t1:exampleSite/config.toml
     Email = ""
     RSS = ""
-    Framagit = "jetsung"
-    GitCode = "jetsung"
+    Framagit = ""
+    GitCode = ""
 
   # Page global config
   # 文章页面全局配置
@@ -631,7 +611,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         lazyLoading = false
         lightTheme = "light"
         darkTheme = "dark"
-<<<<<<< HEAD:exampleSite/hugo.toml
       # Waline comment config (https://waline.js.org/)
       # Waline 评论系统设置 (https://waline.js.org/)
       [params.page.comment.waline]
@@ -641,8 +620,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         # 为空时自动适配当前主题 i18n 配置
         lang = ""
         emoji = ["https://unpkg.com/@waline/emojis@1.0.1/tw-emoji"]
-||||||| e9e89a46:exampleSite/config.toml
-=======
       # Remark42 comment config
       # Remark42 评论系统设置 (https://github.com/umputun/remark42)
       [params.page.comment.remark42]
@@ -657,7 +634,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         server = "https://artalk.js.org"
         site = "artalk"        
     # Third-party library config        
->>>>>>> t1:exampleSite/config.toml
     # Third-party library config
     # 第三方库配置
     [params.page.library]

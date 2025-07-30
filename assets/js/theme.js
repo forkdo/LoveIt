@@ -765,10 +765,7 @@ var Theme = /*#__PURE__*/function () {
           };
           this.switchThemeEventSet.add(this._giscusOnSwitchTheme);
         }
-<<<<<<< HEAD
         if (this.config.comment.waline) Waline.init(this.config.comment.waline);
-||||||| e9e89a46
-=======
 
         if (this.config.comment.remark42) {
           this._remark42OnSwitchTheme = function () {
@@ -780,7 +777,6 @@ var Theme = /*#__PURE__*/function () {
           }
           this.switchThemeEventSet.add(this._remark42OnSwitchTheme);
         }
->>>>>>> t1
       }
     }
   }, {
