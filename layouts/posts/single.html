@@ -30,8 +30,16 @@
         {{- /* Meta */ -}}
         <div class="post-meta">
             <div class="post-meta-line">
+<<<<<<< HEAD
                 {{- $author := $params.author | default .Site.Params.Author.name | default (T "author") -}}
                 {{- $authorLink := $params.authorlink | default .Site.Params.Author.link | default .Site.Home.RelPermalink -}}
+||||||| e9e89a46
+                {{- $author := $params.author | default .Site.Author.name | default (T "author") -}}
+                {{- $authorLink := $params.authorlink | default .Site.Author.link | default .Site.Home.RelPermalink -}}
+=======
+                {{- $author := $params.author | default .Site.Params.author.name | default (T "author") -}}
+                {{- $authorLink := $params.authorlink | default .Site.Params.author.link | default .Site.Home.RelPermalink -}}
+>>>>>>> t1
                 <span class="post-author">
                     {{- $options := dict "Class" "author" "Destination" $authorLink "Title" "Author" "Rel" "author" "Icon" (dict "Class" "fas fa-user-circle fa-fw") "Content" $author -}}
                     {{- partial "plugin/a.html" $options -}}
@@ -55,9 +63,9 @@
                 <i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;{{ T "wordCount" .WordCount }}&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;{{ T "readingTime" .ReadingTime }}&nbsp;
                 {{- $comment := .Scratch.Get "comment" | default dict -}}
-                {{- if $comment.enable | and $comment.valine.enable | and $comment.valine.visitor -}}
-                    <span id="{{ .RelPermalink }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
-                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;{{ T "views" }}
+                {{- if .Site.Params.page.viewsCount -}}
+                    <span id="busuanzi_container_page_pv">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;{{ T "views" }}
                     </span>&nbsp;
                 {{- end -}}
             </div>

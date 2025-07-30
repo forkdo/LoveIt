@@ -765,7 +765,22 @@ var Theme = /*#__PURE__*/function () {
           };
           this.switchThemeEventSet.add(this._giscusOnSwitchTheme);
         }
+<<<<<<< HEAD
         if (this.config.comment.waline) Waline.init(this.config.comment.waline);
+||||||| e9e89a46
+=======
+
+        if (this.config.comment.remark42) {
+          this._remark42OnSwitchTheme = function () {
+            if (_this11.isDark) {
+              window.REMARK42.changeTheme('dark');
+            } else {
+              window.REMARK42.changeTheme('light');
+            }
+          }
+          this.switchThemeEventSet.add(this._remark42OnSwitchTheme);
+        }
+>>>>>>> t1
       }
     }
   }, {

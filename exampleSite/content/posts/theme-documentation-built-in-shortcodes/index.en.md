@@ -152,15 +152,41 @@ The rendered output looks like this:
 
 [Documentation of `x`](https://gohugo.io/shortcodes/x/)
 
+<<<<<<< HEAD
 Example `x` input:
+||||||| e9e89a46
+## 7 tweet
+
+[Documentation of `tweet`](https://gohugo.io/content-management/shortcodes#tweet)
+
+Example `tweet` input:
+=======
+## 7 twitter
+
+[Documentation of `twitter`](https://gohugo.io/content-management/shortcodes#twitter)
+
+Example `twitter` input:
+>>>>>>> t1
 
 ```markdown
+<<<<<<< HEAD
 {{</* x user=GoHugoIO id=917359331535966209 */>}}
+||||||| e9e89a46
+{{</* tweet 917359331535966209 */>}}
+=======
+{{</* twitter user="SanDiegoZoo" id="1453110110599868418" */>}}
+>>>>>>> t1
 ```
 
 The rendered output looks like this:
 
+<<<<<<< HEAD
 {{< x user=GoHugoIO id=917359331535966209 >}}
+||||||| e9e89a46
+{{< tweet 917359331535966209 >}}
+=======
+{{< twitter user="SanDiegoZoo" id="1453110110599868418" >}}
+>>>>>>> t1
 
 ## 7 vimeo
 

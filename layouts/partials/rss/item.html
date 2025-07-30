@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 {{- $params := .Page.Params | merge .Site.Params.Page | merge (dict "author" .Site.Params.Author.name) -}}
+||||||| e9e89a46
+{{- $params := .Page.Params | merge .Site.Params.Page | merge (dict "author" .Site.Author.name) -}}
+=======
+{{- $params := .Page.Params | merge .Site.Params.Page | merge (dict "author" .Site.Params.author.name) -}}
+>>>>>>> t1
 <item>
     <title>
         {{- .Page.Title -}}

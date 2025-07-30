@@ -153,15 +153,41 @@ func main() {
 
 [`x` 的文档](https://gohugo.io/shortcodes/x/)
 
+<<<<<<< HEAD
 一个 `x` 示例:
+||||||| e9e89a46
+## 7 tweet
+
+[`tweet` 的文档](https://gohugo.io/content-management/shortcodes#tweet)
+
+一个 `tweet` 示例:
+=======
+## 7 twitter
+
+[`twitter` 的文档](https://gohugo.io/content-management/shortcodes#twitter)
+
+一个 `twitter` 示例:
+>>>>>>> t1
 
 ```markdown
+<<<<<<< HEAD
 {{</* x user=GoHugoIO id=917359331535966209 */>}}
+||||||| e9e89a46
+{{</* tweet 917359331535966209 */>}}
+=======
+{{</* twitter user="SanDiegoZoo" id="1453110110599868418" */>}}
+>>>>>>> t1
 ```
 
 呈现的输出效果如下:
 
+<<<<<<< HEAD
 {{< x user=GoHugoIO id=917359331535966209 >}}
+||||||| e9e89a46
+{{< tweet 917359331535966209 >}}
+=======
+{{< twitter user="SanDiegoZoo" id="1453110110599868418" >}}
+>>>>>>> t1
 
 ## 7 vimeo
 

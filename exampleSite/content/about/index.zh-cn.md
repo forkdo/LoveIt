@@ -34,6 +34,7 @@ math:
 * :(fab fa-google fa-fw): 支持 **[Google Analytics](https://analytics.google.com/analytics)**
 * :(far fa-chart-bar fa-fw): 支持 **[Fathom Analytics](https://usefathom.com/)**
 * :(fas fa-chart-column fa-fw): 支持 **[Plausible Analytics](https://plausible.io/)**
+* :(fas fa-chart-pie fa-fw): 支持 **[Umami Analytics](https://umami.is/)**
 * :(fab fa-yandex-international fa-fw): 支持 **[Yandex Metrica](https://metrica.yandex.com/)**
 * :(fas fa-sitemap fa-fw): 支持搜索引擎的**网站验证** (Google, Bind, Yandex 和 Baidu)
 * :(fas fa-tachometer-alt fa-fw): 支持所有第三方库的 **CDN**
@@ -63,7 +64,9 @@ math:
 * :(fas fa-comment-dots fa-fw): 支持 **[Commento](https://commento.io/)** 评论系统
 * :(far fa-comment-alt fa-fw): 支持 **[utterances](https://utteranc.es/)** 评论系统
 * :(fas fa-comments fa-fw): 支持 **[giscus](https://giscus.app/)** 评论系统
-
+* :(fas fa-comments fa-fw): 支持 **[Remark42](https://remark42.com/)** 评论系统
+* :(fas fa-comments fa-fw): 支持 **[Artalk](https://artalk.js.org/)** 评论系统
+  
 ### 扩展功能
 
 * :(fas fa-search fa-fw): 支持基于 [Lunr.js](https://lunrjs.com/) 或 [algolia](https://www.algolia.com/) 的**搜索**
