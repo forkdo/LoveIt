@@ -374,6 +374,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Codeberg = ""
     HuggingFace = ""
     Threads = ""
+    Bluesky = ""
     Email = ""
     RSS = ""
     Framagit = ""
@@ -719,6 +720,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # Yandex Metrica
     [params.analytics.yandexMetrica]
       id = ""
+    [params.analytics.goatCounter]
+      code = ""
+
 
   # Cookie consent config
   # Cookie 许可配置
