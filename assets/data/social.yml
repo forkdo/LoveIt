@@ -653,14 +653,6 @@ rss:
   Icon:
     Class: fas fa-rss fa-fw
 
-# Codeberg
-codeberg:
-  Weight: 197
-  Title: Codeberg
-  Prefix: https://codeberg.org/
-  Icon:
-    Simpleicons: codeberg
-
 # Framagit
 framagit:
   Weight: 198
