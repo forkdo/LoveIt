@@ -287,6 +287,8 @@
     Codeberg = ""
     HuggingFace = ""
     Threads = ""
+    LeetCode = ""
+    LeetCodeCN = ""
     Email = ""
     Phone = ""
     RSS = ""

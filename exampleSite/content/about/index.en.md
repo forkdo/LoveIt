@@ -19,7 +19,7 @@ math:
 [![GitHub forks](https://img.shields.io/github/forks/dillonzq/LoveIt?style=social)](https://github.com/dillonzq/LoveIt/fork)
 {{< /style >}}
 
-> [:(far fa-kiss-wink-heart fa-fw): LoveIt](https://github.com/dillonzq/LoveIt) is a **clean**, **elegant** but **advanced** blog theme for [Hugo](https://gohugo.io/) developed by {{< person "https://dillonzq.com/" Dillon "author of the LoveIt theme" "/Dillon.png" >}}.
+> [:(far fa-kiss-wink-heart): LoveIt](https://github.com/dillonzq/LoveIt) is a **clean**, **elegant** but **advanced** blog theme for [Hugo](https://gohugo.io/) developed by {{< person "https://dillonzq.com/" Dillon "author of the LoveIt theme" "/Dillon.png" >}}.
 >
 > It is based on the original [LeaveIt Theme](https://github.com/liuzc/LeaveIt) and [KeepIt Theme](https://github.com/Fastbyte01/KeepIt).
 
@@ -42,19 +42,19 @@ math:
 
 ### Appearance and Layout
 
-* :(fas fa-mobile-screen fa-fw): **[Desktop]/[Mobile] responsive** layout
-* :(fas fa-circle-half-stroke fa-rotate-180 fa-fw): **[Light]/[Dark]** mode
-* :(fas fa-layer-group fa-fw): Globally consistent **design language**
-* :(fas fa-ellipsis-h fa-fw): **Pagination** supported
-* :(far fa-list-alt fa-fw): Easy-to-use and self-expanding **table of contents**
-* :(fas fa-language fa-fw): **Multilanguage** supported and i18n ready
-* :(fab fa-css3-alt fa-fw): Beautiful **CSS animation**
+* :(fas fa-mobile-screen): **[Desktop]/[Mobile] responsive** layout
+* :(fas fa-circle-half-stroke fa-rotate-180): **[Light]/[Dark]** mode
+* :(fas fa-layer-group): Globally consistent **design language**
+* :(fas fa-ellipsis-h): **Pagination** supported
+* :(far fa-list-alt): Easy-to-use and self-expanding **table of contents**
+* :(fas fa-language): **Multilanguage** supported and i18n ready
+* :(fab fa-css3-alt): Beautiful **CSS animation**
 
 ### Social and Comment Systems
 
 * :(far fa-user fa-fw): **Gravatar** supported by [Gravatar](https://gravatar.com)
 * :(fas fa-user-circle fa-fw): Local **Avatar** supported
-* :(far fa-id-card fa-fw): Up to **81** social links supported
+* :(far fa-id-card fa-fw): Up to **84** social links supported
 * :(fas fa-share-square fa-fw): Up to **27** share sites supported
 * :(far fa-comment fa-fw): **Disqus** comment system supported by [Disqus](https://disqus.com)
 * :(far fa-comment-dots fa-fw): **Gitalk** comment system supported by [Gitalk](https://github.com/gitalk/gitalk)
@@ -66,29 +66,28 @@ math:
 * :(fas fa-comments fa-fw): **giscus** comment system supported by [giscus](https://giscus.app/)
 * :(fas fa-comments fa-fw): **Remark42** comment system supported by [Remark42](https://remark42.com/)
 * :(fas fa-comments fa-fw): **Artalk** comment system supported by [Artalk](https://artalk.js.org/)
- 
 ### Extended Features
 
-* :(fas fa-search fa-fw): **Search** supported by [Lunr.js](https://lunrjs.com/) or [algolia](https://www.algolia.com/)
-* :(far fa-grin-tongue-wink fa-fw): **Twemoji** supported
-* :(fas fa-code fa-fw): Automatically **highlighting** code
-* :(far fa-copy fa-fw): **Copy code** to clipboard with one click
-* :(far fa-images fa-fw): **Images gallery** supported by [lightGallery](https://github.com/sachinchoolur/lightgallery)
-* :(fab fa-font-awesome fa-fw): Extended Markdown syntax for **[Font Awesome](https://fontawesome.com/) icons**
-* :(fas fa-superscript fa-fw): Extended Markdown syntax for **ruby annotation**
-* :(fas fa-percentage fa-fw): Extended Markdown syntax for **fraction**
-* :(fas fa-square-root-alt fa-fw): **Mathematical formula** supported by [$\KaTeX$](https://katex.org/)
-* :(fas fa-project-diagram fa-fw): **Diagrams** shortcode supported by [mermaid](https://github.com/mermaid-js/mermaid)
-* :(fas fa-chart-pie fa-fw): **Interactive data visualization** shortcode supported by [ECharts](https://echarts.apache.org/)
-* :(fas fa-map-marked-alt fa-fw): **Mapbox** shortcode supported by [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js)
-* :(fas fa-music fa-fw): **Music player** shortcode supported by [APlayer](https://github.com/MoePlayer/APlayer) and [MetingJS](https://github.com/metowolf/MetingJS)
-* :(fab fa-bilibili fa-fw): **Bilibili player** shortcode
-* :(fas fa-note-sticky fa-fw): Kinds of **admonitions** shortcode
-* :(fab fa-css3 fa-fw): **Custom style** shortcode
-* :(fab fa-js-square fa-fw): **Custom script** shortcode
-* :(fas fa-i-cursor fa-fw): **Animated typing** supported by [TypeIt](https://typeitjs.com/)
-* :(fas fa-cookie-bite fa-fw): **Cookie consent banner** supported by [cookieconsent](https://github.com/osano/cookieconsent)
-* :(far fa-user-circle fa-fw): **Person** shortcode
+* :(fas fa-search): **Search** supported by [Lunr.js](https://lunrjs.com/) or [algolia](https://www.algolia.com/)
+* :(far fa-grin-tongue-wink): **Twemoji** supported
+* :(fas fa-code): Automatically **highlighting** code
+* :(far fa-copy): **Copy code** to clipboard with one click
+* :(far fa-images): **Images gallery** supported by [lightGallery](https://github.com/sachinchoolur/lightgallery)
+* :(fab fa-font-awesome): Extended Markdown syntax for **[Font Awesome](https://fontawesome.com/) icons**
+* :(fas fa-superscript): Extended Markdown syntax for **ruby annotation**
+* :(fas fa-percentage): Extended Markdown syntax for **fraction**
+* :(fas fa-square-root-alt): **Mathematical formula** supported by [$\KaTeX$](https://katex.org/)
+* :(fas fa-project-diagram): **Diagrams** shortcode supported by [mermaid](https://github.com/mermaid-js/mermaid)
+* :(fas fa-chart-pie): **Interactive data visualization** shortcode supported by [ECharts](https://echarts.apache.org/)
+* :(fas fa-map-marked-alt): **Mapbox** shortcode supported by [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js)
+* :(fas fa-music): **Music player** shortcode supported by [APlayer](https://github.com/MoePlayer/APlayer) and [MetingJS](https://github.com/metowolf/MetingJS)
+* :(fab fa-bilibili): **Bilibili player** shortcode
+* :(fas fa-note-sticky): Kinds of **admonitions** shortcode
+* :(fab fa-css3): **Custom style** shortcode
+* :(fab fa-js-square): **Custom script** shortcode
+* :(fas fa-i-cursor): **Animated typing** supported by [TypeIt](https://typeitjs.com/)
+* :(fas fa-cookie-bite): **Cookie consent banner** supported by [cookieconsent](https://github.com/osano/cookieconsent)
+* :(far fa-user-circle): **Person** shortcode
 * ...
 
 ## License
