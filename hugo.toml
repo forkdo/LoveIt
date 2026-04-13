@@ -547,6 +547,13 @@
         lazyLoading = false
         lightTheme = "light"
         darkTheme = "dark"
+      # Waline comment config
+      # Waline 评论系统设置 (https://waline.js.org)
+      [params.page.comment.waline]
+        enable = false
+        serverURL = "https://waline.js.org"
+        lang = "en"
+        emoji = "google.yml"
       # Remark42 comment config
       # Remark42 评论系统设置 (https://github.com/umputun/remark42)
       [params.page.comment.remark42]
